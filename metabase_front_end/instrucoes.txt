@@ -1,0 +1,14 @@
+Instruções para a execução do Metabase
+
+1 - Baixe todos os arquivos na mesma pasta 
+2 - Baixe o Metabase do site oficial https://www.metabase.com/start/
+3 - Abra o banco de dados do DW
+	2.1 - A porta configurada do banco no metabase é a 3306 e o banco usado foi o MySQL.
+4 - Execute Metabase
+5 - Acesse o endereço:
+	http://localhost:3000/
+6 - Coloque o login e a senha:
+	Login: acessoprofessor@gmail.com
+	Senha: password123
+
+

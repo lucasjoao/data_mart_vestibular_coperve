@@ -1,0 +1,21 @@
+CREATE TABLE fato_estatisticas (
+  id_evento_sk BIGINT NOT NULL,
+  id_curso_sk BIGINT NOT NULL,
+  id_cidade_sk BIGINT NOT NULL,
+  nu_aprovados INT,
+  nu_candidatos BIGINT,
+  nu_renda BIGINT,
+  media_biologia DOUBLE,
+  media_geografia DOUBLE,
+  media_matematica DOUBLE,
+  media_lingua_estrangeira DOUBLE,
+  media_portugues DOUBLE,
+  media_redacao DOUBLE,
+  media_fisica DOUBLE,
+  media_historia DOUBLE,
+  media_quimica DOUBLE,
+  PRIMARY KEY (id_evento_sk, id_curso_sk, id_cidade_sk),
+  FOREIGN KEY (id_evento_sk) REFERENCES dim_evento(id_evento_sk),
+  FOREIGN KEY (id_curso_sk) REFERENCES dim_curso(id_curso_sk),
+  FOREIGN KEY (id_cidade_sk) REFERENCES dim_cidade(id_cidade_sk)
+ );

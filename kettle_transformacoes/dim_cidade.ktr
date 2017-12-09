@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>dim_cidade</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2017/11/26 01:55:25.061</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2017/11/26 01:55:25.061</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>input</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>vestibular</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>output</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>dw</database>
+    <port>3307</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3307</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>input_cidade</from>
+      <to>create_messoregiao</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>create_messoregiao</from>
+      <to>create_id</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>create_id</from>
+      <to>Dimension lookup/update</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Dimension lookup/update</name>
+    <type>DimensionLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <schema/>
+    <table>dim_cidade</table>
+    <connection>output</connection>
+    <commit>100</commit>
+    <update>Y</update>
+    <fields>
+      <key>
+        <name>id_cidade</name>
+        <lookup>id_cidade</lookup>
+      </key>
+      <date>
+        <name/>
+        <from>date_from</from>
+        <to>date_to</to>
+      </date>
+      <field>
+        <name>cidade</name>
+        <lookup>nome</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>messoregiao</name>
+        <lookup>messoregiao</lookup>
+        <update>Insert</update>
+      </field>
+      <return>
+        <name>id_cidade_sk</name>
+        <rename/>
+        <creation_method>tablemax</creation_method>
+        <use_autoinc>N</use_autoinc>
+        <version>version</version>
+      </return>
+    </fields>
+    <sequence/>
+    <min_year>1900</min_year>
+    <max_year>2199</max_year>
+    <cache_size>5000</cache_size>
+    <preload_cache>N</preload_cache>
+    <use_start_date_alternative>N</use_start_date_alternative>
+    <start_date_alternative>none</start_date_alternative>
+    <start_date_field_name/>
+    <useBatch>N</useBatch>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>create_messoregiao</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>cidade</field_to_use>
+    <target_field>messoregiao</target_field>
+    <non_match_default>Não informado</non_match_default>
+    <fields>
+      <field>
+        <source_value>ALFREDO WAGNER</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>ANGELINA</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>ANITAPOLIS</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>ANTONIO CARLOS</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>BIGUACU</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>CANELINHA</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>FLORIANOPOLIS</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>GOVERNADOR CELSO RAMOS</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>LEOBERTO LEAL</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>MAJOR GERCINO</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>NOVA TRENTO</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>PALHOCA</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>PAULO LOPES</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>RANCHO QUEIMADO</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>SANTO AMARO DA IMPERATRIZ</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>SAO BONIFACIO</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>SAO JOAO BATISTA</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>SAO JOSE</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>SAO PEDRO DE ALCANTARA</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>TIJUCAS</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+      <field>
+        <source_value>BELA VISTA DO TOLDO</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>CANOINHAS</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>IRINEOPOLIS</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>ITAIOPOLIS</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>MAFRA</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>MAJOR VIEIRA</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>MONTE CASTELO</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>PAPANDUVA</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>PORTO UNIAO</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>SANTA TEREZINHA</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>TIMBO GRANDE</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>TRES BARRAS</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>ARAQUARI</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>BALNEARIO BARRA DO SUL</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>CORUPA</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>GARUVA</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>GUARAMIRIM</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>ITAPOA</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>JARAGUA DO SUL</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>JOINVILLE</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>MASSARANDUBA</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>SAO FRANCISCO DO SUL</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>SCHROEDER</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>CAMPO ALEGRE</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>RIO NEGRINHO</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>SAO BENTO DO SUL</source_value>
+        <target_value>Norte</target_value>
+      </field>
+      <field>
+        <source_value>CHAPECO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>MARAVILHA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAO LOURENCO DO OESTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PINHALZINHO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PALMITOS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CUNHA PORA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAO CARLOS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CORONEL FREITAS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>QUILOMBO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAUDADES</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CAMPO ERE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>AGUAS DE CHAPECO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CAIBI</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>GUATAMBU</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>NOVA ERECHIM</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>NOVA ITABERABA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CORDILHEIRA ALTA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>MODELO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IRACEMINHA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CAXAMBU DO SUL</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SALTINHO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SERRA ALTA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PLANALTO ALEGRE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>UNIAO DO OESTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SANTA TEREZINHA DO PROGRESSO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SUL BRASIL</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>NOVO HORIZONTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>FORMOSA DO SUL</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAO BERNARDINO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>AGUAS FRIAS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>BOM JESUS DO OESTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IRATI</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CUNHATAI</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAO MIGUEL DA BOA VISTA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>TIGRINHOS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>JARDINOPOLIS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>FLOR DO SERTAO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SANTIAGO DO SUL</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ALTO BELA VISTA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ARABUTA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ARVOREDO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CONCORDIA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IPIRA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IPUMIRIM</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IRANI</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ITA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>LINDOIA DO SUL</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PAIAL</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PERITIBA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PIRATUBA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PRESIDENTE CASTELO BRANCO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SEARA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>XAVANTINA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>XANXERE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>XAXIM</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ABELARDO LUZ</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PONTE SERRADA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>FAXINAL DOS GUEDES</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAO DOMINGOS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IPUACU</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PASSOS MAIA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>VARGEAO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ENTRE RIOS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>BOM JESUS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>OURO VERDE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>MAREMA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>LAJEADO GRANDE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ANCHIETA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>BANDEIRANTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>BARRA BONITA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>BELMONTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>DESCANSO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>DIONISIO CERQUEIRA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>GUARACIABA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>GUARUJA DO SUL</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IPORA DO OESTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ITAPIRANGA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>MONDAI</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PALMA SOLA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PARAISO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PRINCESA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>RIQUEZA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ROMELANDIA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SANTA HELENA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAO JOAO DO OESTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAO JOSE DO CEDRO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SAO MIGUEL DO OESTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>TUNAPOLIS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>AGUA DOCE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ARROIO TRINTA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CACADOR</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CALMON</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CAPINZAL</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>CATANDUVAS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ERVAL VELHO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>FRAIBURGO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>HERVAL D'OESTE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IBIAM</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IBICARE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>IOMERE</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>JABORA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>JOACABA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>LACERDOPOLIS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>LEBON REGIS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>LUZERNA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>MACIEIRA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>MATOS COSTA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>OURO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>PINHEIRO PRETO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>RIO DAS ANTAS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>SALTO VELOSO</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>TANGARA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>TREZE TILIAS</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>VARGEM BONITA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>VIDEIRA</source_value>
+        <target_value>Oeste</target_value>
+      </field>
+      <field>
+        <source_value>ANITA GARIBALDI</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>BOCAINA DO SUL</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>BOM JARDIM DA SERRA</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>BOM RETIRO</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>CAMPO BELO DO SUL</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>CAPAO ALTO</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>CELSO RAMOS</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>CERRO NEGRO</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>CORREIA PINTO</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>LAGES</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>OTACILIO COSTA</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>PAINEL</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>PALMEIRA</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>RIO RUFINO</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>SAO JOAQUIM</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>SAO JOSE DO CERRITO</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>URUBICI</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>URUPEMA</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>ABDON BATISTA</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>BRUNOPOLIS</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>CAMPOS NOVOS</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>CURITIBANOS</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>FREI ROGERIO</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>MONTE CARLO</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>PONTE ALTA</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>PONTE ALTA DO NORTE</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>SANTA CECILIA</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>SAO CRISTOVAO DO SUL</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>VARGEM</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>ZORTEA</source_value>
+        <target_value>Serrana</target_value>
+      </field>
+      <field>
+        <source_value>AGROLANDIA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>AGRONOMICA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>APIUNA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>ASCURRA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>ATALANTA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>AURORA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BALNEARIO CAMBORIU</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BALNEARIO PICARRAS</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BARRA VELHA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BENEDITO NOVO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BLUMENAU</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BOMBINHAS</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BOTUVERA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BRACO DO TROMBUDO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>BRUSQUE</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>CAMBORIU</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>CHAPADAO DO LAGEADO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>DONA EMMA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>DOUTOR PEDRINHO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>GASPAR</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>GUABIRUBA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>IBIRAMA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>ILHOTA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>IMBUIA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>INDAIAL</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>ITAJAI</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>ITAPEMA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>ITUPORANGA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>JOSE BOITEUX</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>LAURENTINO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>LONTRAS</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>LUIZ ALVES</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>MIRIM DOCE</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>NAVEGANTES</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>PENHA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>PETROLANDIA</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>POMERODE</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>PORTO BELO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>POUSO REDONDO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>PRESIDENTE GETULIO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>PRESIDENTE NEREU</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>RIO DO CAMPO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>RIO DO OESTE</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>RIO DO SUL</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>RIO DOS CEDROS</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>RODEIO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>SALETE</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>SAO JOAO DO ITAPERIU</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>TIMBO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>TAIO</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>TROMBUDO CENTRAL</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>VIDAL RAMOS</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>VITOR MEIRELES</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>WITMARSUM</source_value>
+        <target_value>Vale do Itajaí</target_value>
+      </field>
+      <field>
+        <source_value>ARARANGUA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>BALNEARIO ARROIO DO SILVA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>BALNEARIO GAIVOTA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>ERMO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>JACINTO MACHADO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>MARACAJA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>MELEIRO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>MORRO GRANDE</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>PASSO DE TORRES</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>PRAIA GRANDE</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>SANTA ROSA DO SUL</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>SAO JOAO DO SUL</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>SOMBRIO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>TIMBE DO SUL</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>TURVO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>BALNEARIO RINCAO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>COCAL DO SUL</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>CRICIUMA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>FORQUILHINHA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>ICARA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>LAURO MULLER</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>MORRO DA FUMACA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>NOVA VENEZA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>SIDEROPOLIS</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>TREVISO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>URUSSANGA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>ARMAZEM</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>BRACO DO NORTE</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>CAPIVARI DE BAIXO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>GAROPABA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>GRAO PARA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>GRAVATAL</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>IMARUI</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>IMBITUBA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>JAGUARUNA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>LAGUNA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>ORLEANS</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>PEDRAS GRANDES</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>PESCARIA BRAVA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>RIO FORTUNA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>SANGAO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>SANTA ROSA DE LIMA</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>SAO LUDGERO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>SAO MARTINHO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>TREZE DE MAIO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>TUBARAO</source_value>
+        <target_value>Sul</target_value>
+      </field>
+      <field>
+        <source_value>AGUAS MORNAS</source_value>
+        <target_value>Grande Florianópolis</target_value>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>432</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>input_cidade</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>input</connection>
+    <sql>SELECT DISTINCT(cidade) FROM candidato</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>create_id</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id_cidade</valuename>
+    <use_database>N</use_database>
+    <connection>input</connection>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

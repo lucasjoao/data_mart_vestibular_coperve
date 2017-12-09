@@ -1,0 +1,22 @@
+CREATE TABLE fato_candidato (
+  id_evento_sk BIGINT NOT NULL,
+  id_curso_sk BIGINT NOT NULL,
+  id_cidade_sk BIGINT NOT NULL,
+  id_candidato_sk BIGINT NOT NULL,
+  aprovado INT,
+  acertos_biologia DOUBLE,
+  acertos_geografia DOUBLE,
+  acertos_matematica DOUBLE,
+  acertos_lingua_estrangeira DOUBLE,
+  acertos_portugues DOUBLE,
+  nota_redacao DOUBLE,
+  acertos_fisica DOUBLE,
+  acertos_historia DOUBLE,
+  acertos_quimica DOUBLE,
+  renda VARCHAR(80),
+  PRIMARY KEY (id_evento_sk, id_curso_sk, id_candidato_sk, id_cidade_sk),
+  FOREIGN KEY (id_evento_sk) REFERENCES dim_evento(id_evento_sk),
+  FOREIGN KEY (id_curso_sk) REFERENCES dim_curso(id_curso_sk),
+  FOREIGN KEY (id_cidade_sk) REFERENCES dim_cidade(id_cidade_sk),
+  FOREIGN KEY (id_candidato_sk) REFERENCES dim_candidato(id_candidato_sk)
+);
